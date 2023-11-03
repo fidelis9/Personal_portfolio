@@ -58,7 +58,7 @@ span{
     display: flex;
     align-items:center;
     padding: 0 10%;
-    background: url("images/download2.jpg") no-repeat;
+    background: url("download2.jpg") no-repeat;
     background-size: 500px 700px;
     background-position: right;
 }
@@ -161,7 +161,7 @@ span{
     display: flex;
     align-items:center;
     padding: 0 10%;
-    background: url("images/wOfzb7.jpg") no-repeat;
+    background: url("wOfzb7.jpg") no-repeat;
     background-size: contain;
     background-position: left;
     border: 2px solid cyan;
@@ -214,7 +214,7 @@ span{
     display: flex;
     align-items:center;
     padding: 0 10%;
-    background: url("images/seas.jpg") no-repeat;
+    background: url("seas.jpg") no-repeat;
     background-size: 1300px 1500px;
     background-position:center;
     
