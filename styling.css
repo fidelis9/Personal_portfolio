@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+   background-color: #081b29 ; 
+}
+.header{
+    position:fixed ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100%;
+}  
+.logo{
+    position: relative;
+    font-size: 35px;
+    color:aliceblue;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.logo::before{
+    content:'';
+    position: absolute;
+    top:0;
+    right:0;
+    width:100%;
+    height: 100%;
+    
+}
+span{
+    color: red;
+}
+.navbar a {
+    font-size: 25px;
+    color: azure;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 4ms;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: crimson;
+}
+
+.home{
+    color: aliceblue;
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    padding: 0 10%;
+    background: url("images/download2.jpg") no-repeat;
+    background-size: 500px 700px;
+    background-position: right;
+}
+.home-content{
+    max-width: 600px;
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: 800;
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 800;
+    color: cyan;
+}
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+.btn-box{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: cyan;
+    border: 2px solid cyan;
+    border-radius: 8px;
+    font-size: 19px;
+    color: darkslategray;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 5ms;
+}
+.about-sci{
+    position: absolute;
+    bottom: 50px;
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+.about-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:50px;
+    height:50px;
+    border: 2px solid cyan;   
+    border-radius: 50%; 
+    font-size: 20px;
+    color:cyan;
+    text-decoration: none;
+    z-index: 1;
+    overflow:hidden;
+
+
+}
+.about-sci a:hover{
+    color:#081629
+}
+.about-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height:100%;
+    background:cyan;
+    z-index: -1;
+    transition: 1s;
+   
+}
+.about-sci a:hover::before{
+    width:100%;
+}
+.home-imghover{
+    position: absolute;
+    top: 30;
+    right: 0px;
+    width: 500px;
+    height: 90%;
+    background: transparent;
+    transition: 2s;
+
+}
+.home-imghover:hover{
+    background:#081b29;
+    opacity: .9;
+
+}
+.about{
+    color: aliceblue;
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    padding: 0 10%;
+    background: url("images/wOfzb7.jpg") no-repeat;
+    background-size: contain;
+    background-position: left;
+    border: 2px solid cyan;
+    border-radius: 70%;
+    overflow: hidden;
+    background-color: dodgerblue;
+    
+}
+.about-content{
+    max-width: 1100px;
+}
+
+.about-content p{
+    font-size: 25px;
+    margin:40px 40px;
+    margin-top: auto;
+}  
+.about-content ul{
+    font-size: 20px;
+    font-weight: 200;
+    margin:40px 40px;
+    
+
+}
+.about-content ul li{
+    list-style-type: none;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    color: red;
+    position: relative;
+    transition:2ms;
+    
+}
+.about-content ul li:hover{
+    color: cyan;
+    
+}
+.about h3{
+    color: azure;
+    font-size: 18px;
+    font-weight: 700;
+   
+}
+.hero{
+    color: aliceblue;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items:center;
+    padding: 0 10%;
+    background: url("images/seas.jpg") no-repeat;
+    background-size: 1300px 1500px;
+    background-position:center;
+    
+}
+.navbar h3{
+    color:cyan;
+    font-family: cursive;
+    font-size: 25px;
+    font-weight: 700;
+    }
+form{
+    width:900px;
+    max-width: 600px;
+    
+}
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border:2px solid azure;
+    color:azure;
+    background:transparent ;
+    font-size: 20px;
+}
+label{
+    height: 100%;
+    position:absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: azure;
+    cursor: text;
+    transition: 4ms;
+}
+button{
+    padding: 10px 0;
+    color: azure;
+    outline: none;
+    background: transparent;
+    border: 2px solid azure;
+    width: 100%;
+    cursor:pointer;
+}
+label,
+input:focus{
+        top: -35px;
+    font-size: 14px;
+}
+.super{
+    color: aliceblue;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+    
+}
+.super-content{
+    color:cyan;
+    font-size: 20px;
+    font-style: italic;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
